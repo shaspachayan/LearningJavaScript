@@ -13,8 +13,7 @@ console.log(firstName.length); // 6
 
 console.log(firstName[firstName.length - 2]); // p
 
-// last Index : length - 1 
-
+// last Index :( length - 1 )
 
 
 //===================USEFUL STRING METHONDS====================================
@@ -26,15 +25,15 @@ console.log(firstName[firstName.length - 2]); // p
 let firstName1 = "shaspa";
 
 // console.log(firstName1.length);
-// firstName1 = firstName1.trim(); // "shaspa"
-// console.log(firstName1)
-// console.log(firstName1.length);
-// firstName1 = firstName1.toUpperCase();
+// firstName1 = firstName1.trim(); 
+// console.log(firstName1) // "shaspa"
+// console.log(firstName1.length); //6
+// firstName1 = firstName1.toUpperCase(); //SHASPA
 // firstName1 = firstName1.toLowerCase();
 // console.log(firstName1);
 
-// start index 
-// end index
+// start index = 0
+// end index = 5
 
 let newString = firstName1.slice(1);
 console.log(newString); // haspa
