@@ -9,7 +9,7 @@
 var value1 = 2;
 console.log(value1);
 
-// you can use only undersore _ or dollar symbol
+// you can use only undersore _ or dollar symbol as a special symbol
 // first_name (valid)
 // _firstname (valid)
 
@@ -17,12 +17,11 @@ console.log(value1);
 // $firstname (valid)
 
 // you cannot use spaces
-// var first_name = "shaspa"; // snake case writing
-// var firstName = "shaspa"; // camel case writing
+// var first_name = "shaspa_chayan"; // snake case writing
+// var firstName = "shaspaChayan"; // camel case writing // max functions are written in camwel case , try to use it .
 // first name (invalid)
 
-// convention
-// start with small letter and use camelCase
+
 
 
 
@@ -38,7 +37,7 @@ console.log(value1);
 // console.log(firstName);
 
 
-// block scope vs funtion scope (covered later in this video)
+// block scope vs funtion scope 
 
 
 //=================================================
