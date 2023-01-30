@@ -37,7 +37,7 @@ console.log(value1);
 // console.log(firstName);
 
 
-// block scope vs funtion scope 
+ 
 
 
 //=================================================
