@@ -14,3 +14,4 @@ for (let data of dataBase) {
 }
 console.log(dataBase.name); // we can also use dot operator to acess the elements
 
+// hi these is a test
