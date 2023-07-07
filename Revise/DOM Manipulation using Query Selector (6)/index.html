@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <nav class="block">
+      <p class="paragraph">Welecome to My website</p>
+    </nav>
+    <div class="block">
+      <h4>Hey there, this is <span id="Username">Shapachayan</span></h4>
+      <p class="paragraph">
+        Namaste, It is Shaspachayan, it is a bit long but it is uniqe.
+      </p>
+      <pre>
+        <code>console.log("HEY THERE");</code>
+      </pre>
+    </div>
+
+    <script>
+      //Query Selector
+
+      //There are 3 main selectors that we are familiar with in CSS , here is the same case
+      // --> tag name
+      // --> id with the help of #
+      // --> class with the help of .
+
+      // we have a query selector and a query selectorall , for now lets use the query selector. 1st tag name , lets think we have to select all the children of body and it self, how we can do this?
+
+      //   document.querySelector("body"); // now lets put this in a variable and console.log
+      //   const body = document.querySelector("body");
+      //   console.log(body); // see in devtools console we got the  body and its children
+      // where we need this? Suppose we want to do a specfic operation for a certain period of time then it is what we can use for.
+
+      //   body.innerHTML = "<h1>HACKED </h1>"; //it basically, discards all the codes we have in our code and replace it with this.
+
+      // Suppose we are selecting the div and we have multiple div in our code, then what will happen? We said we have a querySelector and we have querySelectorAll, querySelector selects only the first apperance , that what div is 1st that will be selectwd and querySelectorAll will select all the mentioned tag.
+
+      //Assignment 01
+      //   change the console.log and print in the screen alert hello
+      const pre = document.querySelector("code");
+      pre.innerHTML = "<h1> Alert HElloW </h1>";
+      console.log(pre);
+
+      // Now our target is by id, now we have to chage the name and put another name to it
+
+      const username = document.querySelector("#Username");
+      //   console.log(username);
+      username.innerText = "Bittu"; // basically we can see that inside the code there is no html in username so we decide to go with innerText. innerHtml will also work fine.
+
+      // now using class
+
+      const paragraph = document.querySelector(".paragraph");
+      paragraph.innerHTML = "<h4> EAYYYY... <?/h4>";
+      console.log(paragraph);
+
+      //now the differnce between querySelector and querySelectorAll is that all retrurns a array of similar type we quering for and only selector returns the 1st apperence of query.
+
+      //   now lets see
+      const all = document.querySelectorAll(".paragraph");
+      all.forEach((e) => {
+        console.log(e.innerHTML); // basi
+      });
+    </script>
+  </body>
+</html>

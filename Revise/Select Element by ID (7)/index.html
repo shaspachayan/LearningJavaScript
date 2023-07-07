@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.getElementById</title>
+    <style>
+      .red-color {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="block">
+      <p class="paragraph">Welecome to My website</p>
+    </nav>
+    <div class="block">
+      <h4>Hey there, this is <span id="Username">Shapachayan</span></h4>
+      <p class="paragraph">
+        Namaste, It is Shaspachayan, it is a bit long but it is uniqe.
+      </p>
+      <pre>
+        <code>console.log("HEY THERE");</code>
+      </pre>
+    </div>
+    <script>
+      // there is another way to play with DOM that is document.getElemetById
+      //   document.getElementById; it is well observed that it is manipulated through id so we dont need to use # or anything.We can put the name as it is and it will work fine.
+
+      const ans = document.getElementById("Username");
+      //   ans.innerHTML = "Shaspa";
+      //   console.log(ans);
+
+      //Now if we have a class, and we want inject that class to specific  portion of a code but we dont want to do it class , we have to do it using query.
+      ans.classList.add("red-color"); //it add the class to the classList of specfic portion
+      ans.classList.remove("red-color"); // we can also remove classes
+      // adding styles to element using query
+
+      ans.style.textDecoration = "underline";
+      ans.style.color = "blue";
+      // we can acess parent, child , applying style to them. And all that can be acessed using . opertor and you can print the properties to it.
+
+      //   ans.remove(); // it  will remove the whole element from DOM
+    </script>
+  </body>
+</html>
